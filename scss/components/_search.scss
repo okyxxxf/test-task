@@ -1,0 +1,24 @@
+.search {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+
+.search::after {
+  content: '';
+  width: 281px;
+  height: 1px;
+  background: #517DAE;
+  position: absolute;
+  bottom: -2px;
+}
+
+.search__input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search__input::placeholder{
+  color: $font-primary-color;
+}
