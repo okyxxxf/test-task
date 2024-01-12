@@ -6,16 +6,20 @@
   display: flex;
   padding: 21px 0;
   justify-content: space-between;
+  align-items: center;
   .info__base {
     display: flex;
+    align-items: center;
     gap: 86px;
   }
 }
 
 .nav {
   background: $secondary-color;
+  padding: 13px;
   .nav__wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     .nav__links {
       display: flex;

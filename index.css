@@ -77,17 +77,21 @@
   display: flex;
   padding: 21px 0;
   justify-content: space-between;
+  align-items: center;
 }
 .header__info .info__base {
   display: flex;
+  align-items: center;
   gap: 86px;
 }
 
 .nav {
   background: hsl(213, 60%, 30%);
+  padding: 13px;
 }
 .nav .nav__wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .nav .nav__wrapper .nav__links {
