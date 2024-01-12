@@ -79,7 +79,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.header__info .info__base {
+
+.info__base {
   display: flex;
   align-items: center;
   gap: 86px;
@@ -89,12 +90,14 @@
   background: hsl(213, 60%, 30%);
   padding: 13px;
 }
-.nav .nav__wrapper {
+
+.nav__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.nav .nav__wrapper .nav__links {
+
+.nav__links {
   display: flex;
   gap: 39px;
 }
