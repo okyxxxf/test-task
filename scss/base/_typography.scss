@@ -1,0 +1,64 @@
+.h1 {
+  font-size: $font-h1-size;
+}
+
+.text {
+  font-size: $font-default-size;
+}
+
+.number {
+  font-size: $font-number-size;
+}
+
+.text_small {
+  font-size: $font-default-small-size;
+}
+
+.description-size {
+  font-size: $font-description-size;
+}
+
+.product__title {
+  font-size: $font-product-label-size;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+* {
+  font-family: $font-family !important;
+}
+
+.primary {
+  color: $font-primary-color;
+}
+
+.secondary {
+  color: $font-secondary-color;
+}
+
+.description {
+  color: $font-description-color;
+  font-size: $font-description-size;
+}
+
+.filter-color {
+  color: $font-filteres-color;
+}
+
+.sale-color {
+  color: $price-sale-color;
+}
+
+.price-color {
+  color: $price-color;
+}
+
+.no-decoration {
+  text-decoration: none;
+}

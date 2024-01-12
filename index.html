@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Test task</title>
 </head>
 <body>
@@ -12,19 +15,19 @@
       <div class="header__info">
         <div class="info__base">
           <div class="logo header__logo">
-            <h1>ЛОГОТИП</h1>
+            <h1 class="h1 bold primary">ЛОГОТИП</h1>
           </div>
-          <div class="number header__number">
+          <div class="number header__number primary regular number">
             8 800 777 50 50
           </div>
           <div class="search header__search">
             <img src="" alt="search icon"> 
-            <input type="text" placeholder="Поиск товаров">
+            <input class="primary text_small regular" type="text" placeholder="Поиск товаров">
           </div>
         </div>
         <div class="info__additional">
           <div class="pay-link">
-            <a href="#">Доставка и оплата</a>
+            <a class="primary text_small regular" href="#">Доставка и оплата</a>
           </div>
         </div>  
       </div>
@@ -33,24 +36,24 @@
       <div class="nav__wrapper wrapper">
         <ul class="nav__links">
           <li class="nav__link">
-            <a href="">МОБИЛЬНЫЕ ТЕЛЕФОНЫ</a>
+            <a class="bold primary text">МОБИЛЬНЫЕ ТЕЛЕФОНЫ</a>
           </li>
           <li class="nav__link">
-            <a href="">ПЛАНШЕТЫ</a>
+            <a class="bold primary text">ПЛАНШЕТЫ</a>
           </li>
           <li class="nav__link">
-            <a href="">ФОТОТЕХНИКА</a>
+            <a class="bold primary text">ФОТОТЕХНИКА</a>
           </li>
           <li class="nav__link">
-            <a href="">НОУТБУКИ</a>
+            <a class="bold primary text">НОУТБУКИ</a>
           </li>
           <li class="nav__link">
-            <a href="">ТЕЛЕВИЗОРЫ</a>
+            <a class="bold primary text">ТЕЛЕВИЗОРЫ</a>
           </li>
         </ul>
         <div class="trash">
           <img src="" alt="">
-          <span class="trash__text">КОРЗИНА</span>
+          <span class="trash__text text primary regular">КОРЗИНА</span>
         </div>
       </div>
     </nav>
@@ -58,14 +61,14 @@
   <main class="main">
     <div class="main__wrapper wrapper">
       <section class="filters">
-        <select class="filter" name="logotype" id="logotype">
+        <select class="filter filter-color text_small" name="logotype" id="logotype">
           <option class="filter__label" value="any">Любого логотипа</option>
           <option class="filter__option" value="">Компакт-камера</option>
           <option class="filter__option" value="">Беззеркальная</option>
           <option class="filter__option" value="">Зеркальная</option>
           <option class="filter__option" value="">Среднеформатная</option>
         </select>
-        <select class="filter" name="brend" id="brend">
+        <select class="filter filter-color text_small" name="brend" id="brend">
           <option class="filter__label" value="any">Любого бренда</option>
           <option class="filter__option" value="">Canon</option>
           <option class="filter__option" value="">Nikon</option>
@@ -75,110 +78,110 @@
           <option class="filter__option" value="">Olympus</option>
         </select>
         <div class="filters__price">
-          <span class="price__text">ПО ЦЕНЕ</span>
-          <input class="price__input input" type="text">
-          <input class="price__input input" type="text">
-          <span class="price__text">РУБЛЕЙ</span>
+          <span class="price__text filter-color text_small">ПО ЦЕНЕ</span>
+          <input class="price__input input text_small" type="text">
+          <input class="price__input input text_small" type="text">
+          <span class="price__text filter-color text_small">РУБЛЕЙ</span>
         </div>
       </section>
       <section class="products">
         <ul class="products__list">
           <li class="product product_big">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
-            <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+            <h2 class="text secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description text_small">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <div class="product__price sale-color">
+              <span class="product__price-text text sale-color">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>
           <li class="product">
             <img src="" alt="" class="product__img">
-            <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
-            <div class="product__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+            <h2 class="product__title secondary">Canon EOS 5D Mark III Body</h2>
+            <div class="product__text description description-size">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
             <div class="product__price">
-              <span class="product__price-text">3 200,00 руб.</span>
+              <span class="product__price-text price-color text">3 200,00 руб.</span>
               <img src="" alt="" class="product__price-icon">
             </div>
           </li>

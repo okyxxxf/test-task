@@ -1,3 +1,68 @@
+.h1 {
+  font-size: 28px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.number {
+  font-size: 19px;
+}
+
+.text_small {
+  font-size: 16px;
+}
+
+.description-size {
+  font-size: 14px;
+}
+
+.product__title {
+  font-size: 18px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+* {
+  font-family: "PT Sans" !important;
+}
+
+.primary {
+  color: #FFF;
+}
+
+.secondary {
+  color: #333;
+}
+
+.description {
+  color: #989898;
+  font-size: 14px;
+}
+
+.filter-color {
+  color: #484848;
+}
+
+.sale-color {
+  color: #FF3D3D;
+}
+
+.price-color {
+  color: #325AC0;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 1128px;
   margin: auto;
@@ -19,7 +84,7 @@
 }
 
 .nav {
-  background: #1F497B;
+  background: hsl(213, 60%, 30%);
 }
 .nav .nav__wrapper {
   display: flex;

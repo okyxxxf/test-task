@@ -1,17 +1,27 @@
 $primary-color: #265C9A;
-$secondary-color: #1F497B;
-$text-color:#FFF;
+$secondary-color: hsl(213, 60%, 30%);
 $price-color: #325AC0;
 $price-sale-color: #FF3D3D;
-$text-hover-color: #FBFF3D;
+$font-hover-color: #FBFF3D;
 $product-hover-bg-color: rgba(50, 90, 192, 1);
 $product-sale-hover-bg-color: rgba(255, 61, 61, 1);
 $product-hover-border-color: #819DEB;
 $product-sale-hover-border-color: #FF3D3D;
 $menu-hover-color: #618CBF;
 $select-hover-color: #E8EEFF;
+$font-primary-color: #FFF;
+$font-secondary-color: #333;
+$font-description-color: #989898;
+$font-filteres-color: #484848;
 
 $font-family: 'PT Sans';
+
+$font-h1-size: 28px;
+$font-default-size: 20px;
+$font-number-size: 19px;
+$font-product-label-size: 18px;
+$font-default-small-size: 16px;
+$font-description-size: 14px;
 
 $desktop-width: 1300px;
 $tablet-big-width: 1024px;
