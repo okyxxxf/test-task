@@ -1,0 +1,25 @@
+.header {
+  background: $primary-color;
+}
+
+.header__info {
+  display: flex;
+  padding: 21px 0;
+  justify-content: space-between;
+  .info__base {
+    display: flex;
+    gap: 86px;
+  }
+}
+
+.nav {
+  background: $secondary-color;
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .nav__links {
+      display: flex;
+      gap: 39px;
+    }
+  }
+}

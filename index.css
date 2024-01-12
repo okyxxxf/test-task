@@ -4,6 +4,32 @@
   padding: 0 86px;
 }
 
+.header {
+  background: #265C9A;
+}
+
+.header__info {
+  display: flex;
+  padding: 21px 0;
+  justify-content: space-between;
+}
+.header__info .info__base {
+  display: flex;
+  gap: 86px;
+}
+
+.nav {
+  background: #1F497B;
+}
+.nav .nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav__wrapper .nav__links {
+  display: flex;
+  gap: 39px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
