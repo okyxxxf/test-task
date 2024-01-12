@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.69.7"
+  },
+  "name": "test-task",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass scss/main.scss index.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
