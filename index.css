@@ -75,6 +75,18 @@
   fill: #FBFF3D;
 }
 
+.search {
+  cursor: pointer;
+}
+
+.search > svg > path {
+  transition: 0.5s;
+}
+
+.search:hover > svg > path {
+  fill: #FBFF3D;
+}
+
 .h1 {
   font-size: 28px;
 }
