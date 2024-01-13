@@ -61,3 +61,12 @@
 .no-decoration {
   text-decoration: none;
 }
+
+@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+  .product__title {
+    font-size: 20px;
+  }
+  .description-size {
+    font-size: 16px;
+  }
+}

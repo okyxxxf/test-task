@@ -10,3 +10,19 @@
   gap: 14px;
   margin-left: 13px;
 }
+
+.filters_mobile {
+  display: none;
+}
+
+@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+  .filters_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 14px 0;
+  }
+  .filters {
+    display: none;
+  }
+}

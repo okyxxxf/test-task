@@ -45,3 +45,32 @@
   display: flex;
   gap: 9px;
 }
+
+.pay-link .trash-icon {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+  .nav {
+    display: none;
+  }
+  .info__base {
+    gap: 41px;
+  }
+  .number {
+    display: none;
+  }
+  .pay-link .trash-icon {
+    display: inline;
+  }
+  .pay-link > a {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}

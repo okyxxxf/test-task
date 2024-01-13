@@ -22,3 +22,9 @@
 .search__input::placeholder{
   color: $font-primary-color;
 }
+
+@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+  .search::after {
+    width: 697px;
+  }
+}

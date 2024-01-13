@@ -124,6 +124,14 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .product__title {
+    font-size: 20px;
+  }
+  .description-size {
+    font-size: 16px;
+  }
+}
 .product__img {
   width: 160px;
   height: 160px;
@@ -207,6 +215,44 @@
   text-decoration-line: line-through;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .product__img {
+    width: 164px;
+    height: 164px;
+    padding: 16px 66px 12px 66px;
+  }
+  .product {
+    width: 294px;
+    height: 340px;
+    padding: 0 16px 19px 16px;
+  }
+  .product__text {
+    padding-bottom: 10px;
+  }
+  .product_big {
+    flex-wrap: wrap;
+    width: 617.5px;
+    height: 312px;
+    padding: 31px 17px 16px 19px;
+    align-items: start;
+  }
+  .product_big .product__img {
+    width: 297px;
+    height: 297px;
+    padding: 0px 0 0 0;
+  }
+  .product_big .product__info {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px 0 4px 18px;
+  }
+  .product_big .info__title {
+    gap: 4px;
+  }
+}
 .price__input {
   padding: 13px 11px 13px 62px;
   width: 59.5px;
@@ -263,6 +309,11 @@
   color: #FFF;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .search::after {
+    width: 697px;
+  }
+}
 .filter {
   width: 264px;
   position: relative;
@@ -328,6 +379,12 @@
   padding: 0 86px;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .wrapper {
+    max-width: 984px;
+    padding: 0 20px;
+  }
+}
 .filters {
   display: flex;
   gap: 14px;
@@ -341,6 +398,21 @@
   margin-left: 13px;
 }
 
+.filters_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .filters_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 14px 0;
+  }
+  .filters {
+    display: none;
+  }
+}
 .header {
   background: #265C9A;
 }
@@ -389,6 +461,34 @@
   gap: 9px;
 }
 
+.pay-link .trash-icon {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .nav {
+    display: none;
+  }
+  .info__base {
+    gap: 41px;
+  }
+  .number {
+    display: none;
+  }
+  .pay-link .trash-icon {
+    display: inline;
+  }
+  .pay-link > a {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
 .products__list {
   display: flex;
   flex-direction: row;

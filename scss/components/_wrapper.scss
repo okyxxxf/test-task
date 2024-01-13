@@ -3,3 +3,10 @@
   margin: auto;
   padding: 0 86px;
 }
+
+@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+  .wrapper {
+    max-width: calc($tablet-big-width - 20px * 2);
+    padding: 0 20px;
+  }
+}
