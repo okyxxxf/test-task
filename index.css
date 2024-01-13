@@ -288,11 +288,19 @@
   background: #265C9A;
 }
 
+.header__wrapper {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  width: 100%;
+}
+
 .header__info {
   display: flex;
-  padding: 21px 0;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .info__base {
@@ -303,10 +311,12 @@
 
 .nav {
   background: hsl(213, 60%, 30%);
-  padding: 13px;
+  height: 45px;
+  padding-top: 1px;
 }
 
 .nav__wrapper {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -315,6 +325,11 @@
 .nav__links {
   display: flex;
   gap: 39px;
+}
+
+.trash {
+  display: flex;
+  gap: 9px;
 }
 
 .products__list {
