@@ -4,3 +4,8 @@
   flex-wrap: wrap;
   padding-bottom: 39px;
 }
+@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+  .product:nth-child(n + 9) {
+    display: none;
+  }
+}

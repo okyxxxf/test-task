@@ -511,6 +511,11 @@
   padding-bottom: 39px;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .product:nth-child(n+9) {
+    display: none;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
