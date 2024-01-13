@@ -61,22 +61,62 @@
   <main class="main">
     <div class="main__wrapper wrapper">
       <section class="filters">
-        <select class="filter filter-color text_small" name="logotype" id="logotype">
-          <option class="filter__label" value="any">Любого логотипа</option>
-          <option class="filter__option" value="">Компакт-камера</option>
-          <option class="filter__option" value="">Беззеркальная</option>
-          <option class="filter__option" value="">Зеркальная</option>
-          <option class="filter__option" value="">Среднеформатная</option>
-        </select>
-        <select class="filter filter-color text_small" name="brend" id="brend">
-          <option class="filter__label" value="any">Любого бренда</option>
-          <option class="filter__option" value="">Canon</option>
-          <option class="filter__option" value="">Nikon</option>
-          <option class="filter__option" value="">Sony</option>
-          <option class="filter__option" value="">Fujifilm</option>
-          <option class="filter__option" value="">Samsung</option>
-          <option class="filter__option" value="">Olympus</option>
-        </select>
+        <div class="filter" id="logotype">
+          <button class="filter__button">
+            <span class="filter__value filter-color text_small">Любого логотипа</span>
+            <img class="filter__image" src="/assets/select-icon.svg" alt="" class="select-icon">
+          </button>
+          <ul class="filter__dropdown">
+            <li class="filter__element">
+              <input type="radio" id="compact-camera" name="logotype" />
+              <label class="filter-color text_small" for="compact-camera">Компакт-камера</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="without-mirror" name="logotype" />
+              <label class="filter-color text_small" for="without-mirror">Беззеркальная</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="mirror" name="logotype" />
+              <label class="filter-color text_small" for="mirror">Зеркальная</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="middle-format" name="logotype" />
+              <label class="filter-color text_small" for="middle-format">Среднеформатная</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter" id="brend">
+          <button class="filter__button">
+            <span class="filter__value filter-color text_small">Любого бренда</span>
+            <img class="filter__image" src="/assets/select-icon.svg" alt="" class="select-icon">
+          </button>
+          <ul class="filter__dropdown">
+            <li class="filter__element">
+              <input type="radio" id="canon" name="brend" />
+              <label class="filter-color text_small" for="canon">Canon</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="nikon" name="brend" />
+              <label class="filter-color text_small" for="nikon">Nikon</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="sony" name="brend" />
+              <label class="filter-color text_small" for="sony">Sony</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="fujifilm" name="brend" />
+              <label class="filter-color text_small" for="fujifilm">Fujifilm</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="samsung" name="brend" />
+              <label class="filter-color text_small" for="samsung">Samsung</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="olympus" name="brend" />
+              <label class="filter-color text_small" for="olympus">Olympus</label>
+            </li>
+          </ul>
+        </div>
         <div class="filters__price">
           <span class="price__text filter-color text_small">ПО ЦЕНЕ</span>
           <input class="price__input input text_small" type="text">
@@ -190,4 +230,5 @@
     </div>
   </main>
 </body>
+<script src="/scripts/customSelect.js"></script>
 </html>
