@@ -1,0 +1,32 @@
+.price__input {
+  padding: 13px 11px 13px 62px;
+  width: 59.5px;
+  border: 1px solid #D0D0D0;
+  outline: none;
+  position: relative;
+}
+
+.price__inputs-container::after, .price__inputs-container::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  z-index: 1;
+  color: $font-filteres-color;
+  font-size: $font-default-small-size;
+}
+
+.price__inputs-container::before {
+  content: 'от';
+  left: 11px;
+}
+
+.price__inputs-container::after {
+  content: 'до';
+  left: 144px;
+}
+
+.price__inputs-container {
+  display: flex;
+  position: relative;
+}
+
+
