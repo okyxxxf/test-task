@@ -7,7 +7,7 @@
 .product {
   display: flex;
   width: 240px;
-  max-height: 328px;
+  height: 329px;
   flex-direction: column;
   align-items: center;
   padding: 14px 20px;
@@ -66,5 +66,17 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+  .product__price-text::before {
+    content: "4 400,00 руб.";
+    position: absolute;
+    top: -32px;
+    color: #989898;
+    font-family: $font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: line-through;
   }
 }
