@@ -34,3 +34,15 @@
     width: 452px;
   }
 }
+
+@media screen and (max-width: $tablet-small-width) and (min-width: $phone-width) {
+  .search::after {
+    display: none;
+  }
+  .search__input {
+    display: none;
+  }
+  .search {
+    padding-left: 40px;
+  }
+}

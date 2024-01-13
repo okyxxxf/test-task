@@ -32,7 +32,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 0 14px 0;
+    padding: 15px 0 10px 0;
+  }
+  .filters {
+    display: none;
+  }
+ }
+
+ @media screen and (max-width: $tablet-small-width) and (min-width: $phone-width) {
+  .filters_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0 24px 0;
   }
   .filters {
     display: none;

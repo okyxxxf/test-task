@@ -80,7 +80,7 @@
     display: none;
   }
   .info__base {
-    gap: 41px;
+    gap: 37px;
   }
   .number {
     display: none;
@@ -93,5 +93,29 @@
   }
   .burger-menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: $tablet-small-width) and (min-width: $phone-width) {
+  .nav {
+    display: none;
+  }
+  .info__base {
+    gap: 22px;
+  }
+  .number {
+    display: none;
+  }
+  .pay-link .trash-icon {
+    display: inline;
+  }
+  .pay-link > a {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .header {
+    height: 72px;
   }
 }

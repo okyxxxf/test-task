@@ -62,7 +62,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: $desktop-width) and (min-width: $tablet-big-width) {
+@media screen and (max-width: $desktop-width) and (min-width: $phone-width) {
   .product__title {
     font-size: 20px;
   }
