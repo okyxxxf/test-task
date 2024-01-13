@@ -419,6 +419,9 @@
   .search {
     padding-left: 40px;
   }
+  .search.active {
+    padding-left: 0;
+  }
   .search.active::after {
     display: block;
     width: 150px;
