@@ -56,8 +56,23 @@
   transition: 0.5s;
 }
 
+.pay-link:hover > .trash-icon > path {
+  fill: #FBFF3D;
+}
+
 .pay-link:hover > a {
   color: #FBFF3D;
+}
+
+.burger-menu {
+  cursor: pointer;
+}
+.burger-menu .burger-icon > path {
+  transition: 0.5s;
+}
+
+.burger-menu:hover > .burger-icon > path {
+  fill: #FBFF3D;
 }
 
 .h1 {

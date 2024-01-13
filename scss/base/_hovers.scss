@@ -55,6 +55,21 @@
   transition: 0.5s;
 }
 
+.pay-link:hover > .trash-icon > path {
+  fill: $font-hover-color;
+}
+
 .pay-link:hover > a {
   color: $font-hover-color;
+}
+
+.burger-menu {
+  cursor: pointer;
+  .burger-icon > path {
+    transition: 0.5s;
+  }
+}
+
+.burger-menu:hover > .burger-icon > path{
+  fill: $font-hover-color;
 }
