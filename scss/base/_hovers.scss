@@ -1,0 +1,60 @@
+.nav__link > a {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav__link:hover > a {
+  color: $font-hover-color;
+}
+
+.trash:hover .trash-icon > path{
+  fill: $font-hover-color;
+}
+
+.trash:hover .trash__text {
+  color: $font-hover-color; 
+}
+
+.trash-icon > path, .trash__text {
+  transition: 0.5s;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.filter__element:hover {
+  background: #E8EEFF;
+}
+
+.filter__element, .filter__element > * {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.filter__button {
+  cursor: pointer;
+}
+
+.product {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product:hover {
+  background: $product-hover-bg-color;
+  border: 1px solid $product-hover-border-color;
+}
+
+.product_big:hover {
+  background: $product-sale-hover-bg-color;
+  border: 1px solid $product-sale-hover-border-color;
+}
+
+.pay-link > a {
+  transition: 0.5s;
+}
+
+.pay-link:hover > a {
+  color: $font-hover-color;
+}

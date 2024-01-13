@@ -51,10 +51,6 @@
   transition: 0.5s;
 }
 
-.filter__element:hover {
-  background: #E8EEFF;
-}
-
 .filter.active .filter__dropdown {
   display: block;
   border-top: none;

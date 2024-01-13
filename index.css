@@ -1,4 +1,65 @@
 @charset "UTF-8";
+.nav__link > a {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav__link:hover > a {
+  color: #FBFF3D;
+}
+
+.trash:hover .trash-icon > path {
+  fill: #FBFF3D;
+}
+
+.trash:hover .trash__text {
+  color: #FBFF3D;
+}
+
+.trash-icon > path, .trash__text {
+  transition: 0.5s;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.filter__element:hover {
+  background: #E8EEFF;
+}
+
+.filter__element, .filter__element > * {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.filter__button {
+  cursor: pointer;
+}
+
+.product {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product:hover {
+  background: rgb(232, 238, 255);
+  border: 1px solid #819DEB;
+}
+
+.product_big:hover {
+  background: rgb(255, 241, 241);
+  border: 1px solid #FF3D3D;
+}
+
+.pay-link > a {
+  transition: 0.5s;
+}
+
+.pay-link:hover > a {
+  color: #FBFF3D;
+}
+
 .h1 {
   font-size: 28px;
 }
@@ -253,10 +314,6 @@
 .filter__element {
   padding: 7px 17px;
   transition: 0.5s;
-}
-
-.filter__element:hover {
-  background: #E8EEFF;
 }
 
 .filter.active .filter__dropdown {
