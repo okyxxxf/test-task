@@ -28,3 +28,9 @@
     width: 697px;
   }
 }
+
+@media screen and (max-width: $tablet-big-width) and (min-width: $tablet-small-width) {
+  .search::after {
+    width: 452px;
+  }
+}

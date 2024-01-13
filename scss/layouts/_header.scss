@@ -74,3 +74,24 @@
     display: block;
   }
 }
+
+@media screen and (max-width: $tablet-big-width) and (min-width: $tablet-small-width) {
+  .nav {
+    display: none;
+  }
+  .info__base {
+    gap: 41px;
+  }
+  .number {
+    display: none;
+  }
+  .pay-link .trash-icon {
+    display: inline;
+  }
+  .pay-link > a {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}

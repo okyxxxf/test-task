@@ -268,6 +268,44 @@
     gap: 4px;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .product__img {
+    width: 175px;
+    height: 175px;
+    padding-bottom: 15px;
+  }
+  .product {
+    width: 314px;
+    height: 330px;
+    padding: 17px 24px;
+  }
+  .product__text {
+    padding-bottom: 26px;
+  }
+  .product_big {
+    flex-wrap: wrap;
+    width: 683px;
+    height: 318px;
+    padding: 25px 24px 16px 21px;
+    align-items: start;
+  }
+  .product_big .product__img {
+    width: 318px;
+    height: 318px;
+    padding: 0px 0 0 0;
+  }
+  .product_big .product__info {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px 0 4px 18px;
+  }
+  .product_big .info__title {
+    gap: 4px;
+  }
+}
 .price__input {
   padding: 13px 11px 13px 62px;
   width: 59.5px;
@@ -327,6 +365,11 @@
 @media screen and (max-width: 1300px) and (min-width: 1024px) {
   .search::after {
     width: 697px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .search::after {
+    width: 452px;
   }
 }
 .filter {
@@ -400,6 +443,12 @@
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .wrapper {
+    max-width: 728px;
+    padding: 0 20px;
+  }
+}
 .filters {
   display: flex;
   gap: 14px;
@@ -418,6 +467,17 @@
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .filters_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 14px 0;
+  }
+  .filters {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .filters_mobile {
     display: flex;
     align-items: center;
@@ -504,6 +564,26 @@
     display: block;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .info__base {
+    gap: 41px;
+  }
+  .number {
+    display: none;
+  }
+  .pay-link .trash-icon {
+    display: inline;
+  }
+  .pay-link > a {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
 .products__list {
   display: flex;
   flex-direction: row;
@@ -513,6 +593,11 @@
 
 @media screen and (max-width: 1300px) and (min-width: 1024px) {
   .product:nth-child(n+9) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .product:nth-child(n+6) {
     display: none;
   }
 }

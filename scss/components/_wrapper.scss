@@ -10,3 +10,10 @@
     padding: 0 20px;
   }
 }
+
+@media screen and (max-width: $tablet-big-width) and (min-width: $tablet-small-width) {
+  .wrapper {
+    max-width: calc($tablet-small-width - 20px * 2);
+    padding: 0 20px;
+  }
+}
