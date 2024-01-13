@@ -39,10 +39,25 @@
   .search::after {
     display: none;
   }
+
   .search__input {
     display: none;
   }
+
   .search {
     padding-left: 40px;
+  }
+
+  .search.active::after {
+    display: block;
+    width: 150px;
+  }
+
+  .search.active .search__input {
+    display: block;
+  }
+  
+  .logo.inactive {
+    display: none;
   }
 }
