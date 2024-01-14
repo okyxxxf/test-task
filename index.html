@@ -142,7 +142,7 @@
       </section>
       <section class="filters_mobile">
         <div class="text_small secondary bold">ФОТОТЕХНИКА</div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
           <g clip-path="url(#clip0_0_173)">
             <path d="M21.0833 17.4167H18.6423C18.2453 16.0958 17.0317 15.125 15.5833 15.125C14.135 15.125 12.9222 16.0958 12.5244 17.4167H0.916652C0.410652 17.4167 0 17.8273 0 18.3333C0 18.8393 0.410652 19.25 0.916652 19.25H12.5244C12.9213 20.5709 14.135 21.5417 15.5833 21.5417C17.0316 21.5417 18.2444 20.5709 18.6422 19.25H21.0833C21.5902 19.25 22 18.8393 22 18.3333C22 17.8273 21.5903 17.4167 21.0833 17.4167ZM15.5833 19.7083C14.8252 19.7083 14.2083 19.0914 14.2083 18.3333C14.2083 17.5753 14.8252 16.9583 15.5833 16.9583C16.3414 16.9583 16.9583 17.5753 16.9583 18.3333C16.9583 19.0914 16.3414 19.7083 15.5833 19.7083Z" fill="#757575"/>
             <path d="M21.0833 2.75003H18.6423C18.2444 1.42912 17.0317 0.458374 15.5833 0.458374C14.135 0.458374 12.9222 1.42912 12.5244 2.75003H0.916652C0.410652 2.75003 0 3.16068 0 3.66668C0 4.17268 0.410652 4.58333 0.916652 4.58333H12.5244C12.9222 5.90428 14.135 6.87503 15.5833 6.87503C17.0317 6.87503 18.2444 5.90428 18.6423 4.58337H21.0833C21.5903 4.58337 22 4.17272 22 3.66672C22 3.16072 21.5903 2.75003 21.0833 2.75003ZM15.5833 5.04168C14.8252 5.04168 14.2083 4.42478 14.2083 3.66668C14.2083 2.90858 14.8252 2.29168 15.5833 2.29168C16.3414 2.29168 16.9583 2.90858 16.9583 3.66668C16.9583 4.42478 16.3414 5.04168 15.5833 5.04168Z" fill="#757575"/>
@@ -266,8 +266,79 @@
       </section>
     </div>
   </main>
+  <div class="filters__modal modal">
+    <div class="modal__wrapper_filters">
+      <svg class="cross-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+        <path d="M10.9143 9.49999L18.7071 1.7071C19.0977 1.31656 19.0977 0.683406 18.7071 0.292904C18.3166 -0.0976347 17.6834 -0.0976347 17.2929 0.292904L9.49999 8.08579L1.7071 0.292904C1.31656 -0.0976347 0.683406 -0.0976347 0.292904 0.292904C-0.0975975 0.683443 -0.0976347 1.3166 0.292904 1.7071L8.08579 9.49999L0.292904 17.2929C-0.0976347 17.6834 -0.0976347 18.3166 0.292904 18.7071C0.683443 19.0976 1.3166 19.0976 1.7071 18.7071L9.49999 10.9142L17.2928 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3165 19.0976 17.6834 18.7071 17.2929L10.9143 9.49999Z" fill="white"/>
+      </svg>
+      <div class="modal__filters">
+        <div class="filter" id="logotype-modal">
+          <button class="filter__button">
+            <span class="filter__value filter-color text_small">Любого логотипа</span>
+            <img class="filter__image" src="/assets/select-icon.svg" alt="" class="select-icon">
+          </button>
+          <ul class="filter__dropdown">
+            <li class="filter__element">
+              <input type="radio" id="compact-camera" name="logotype" />
+              <label class="filter-color text_small" for="compact-camera">Компакт-камера</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="without-mirror" name="logotype" />
+              <label class="filter-color text_small" for="without-mirror">Беззеркальная</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="mirror" name="logotype" />
+              <label class="filter-color text_small" for="mirror">Зеркальная</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="middle-format" name="logotype" />
+              <label class="filter-color text_small" for="middle-format">Среднеформатная</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter" id="brend-modal">
+          <button class="filter__button">
+            <span class="filter__value filter-color text_small">Любого бренда</span>
+            <img class="filter__image" src="/assets/select-icon.svg" alt="" class="select-icon">
+          </button>
+          <ul class="filter__dropdown">
+            <li class="filter__element">
+              <input type="radio" id="canon" name="brend" />
+              <label class="filter-color text_small" for="canon">Canon</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="nikon" name="brend" />
+              <label class="filter-color text_small" for="nikon">Nikon</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="sony" name="brend" />
+              <label class="filter-color text_small" for="sony">Sony</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="fujifilm" name="brend" />
+              <label class="filter-color text_small" for="fujifilm">Fujifilm</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="samsung" name="brend" />
+              <label class="filter-color text_small" for="samsung">Samsung</label>
+            </li>
+            <li class="filter__element">
+              <input type="radio" id="olympus" name="brend" />
+              <label class="filter-color text_small" for="olympus">Olympus</label>
+            </li>
+          </ul>
+        </div>
+        <div class="price__inputs-container">
+          <input class="price__input text_small filter-color" type="text" placeholder="500 000">
+          <input class="price__input text_small filter-color" type="text" placeholder="25 000">
+        </div>
+        <button class="modal__button">ПРИМЕНИТЬ</button>
+      </div>
+    </div>
+  </div>
 </body>
-<script src="/scripts/burgurMenu.js"></script>
+<script src="/scripts/modal.js"></script>
+<script src="/scripts/burgerMenu.js"></script>
 <script src="/scripts/openSearch.js"></script>
 <script src="/scripts/customSelect.js"></script>
 </html>

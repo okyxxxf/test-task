@@ -28,4 +28,34 @@ window.onload = () => {
       filterByBrend.classList.add('active');
     })
   });
+
+  const filterByBrendM = document.querySelector('#brend-modal');
+  const filterByBrendTextM = filterByBrendM.querySelector('.filter__value');
+
+  filterByBrendM.addEventListener('click', () => {
+    filterByBrendM.classList.toggle('active');
+  });
+
+  const brendValueM = filterByBrendM.querySelectorAll('.filter__element');
+  brendValueM.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      filterByBrendTextM.innerText = elem.querySelector('label').innerText;
+      filterByBrendM.classList.add('active');
+    })
+  });
+
+  const filterByLogotypeM = document.querySelector('#logotype-modal');
+  const filterByLogotypeTextM = filterByLogotypeM.querySelector('.filter__value');
+
+  filterByLogotypeM.addEventListener('click', () => {
+    filterByLogotypeM.classList.toggle('active');
+  });
+
+  const logotypeValuesM = filterByLogotypeM.querySelectorAll('.filter__element');
+  logotypeValuesM.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      filterByLogotypeTextM.innerText = elem.querySelector('label').innerText;
+      filterByLogotypeM.classList.add('active');
+    })
+  });
 }
